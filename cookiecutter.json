@@ -1,0 +1,5 @@
+{
+    "project_name": "my_new_project",
+    "is_r_pkg_required": "{{ cookiecutter.is_r_required }}",
+    "r_pkg_name": "{{cookiecutter.project_name | lower | replace(' ','.') | replace('_', '.') | replace('-','.')}}"
+}
