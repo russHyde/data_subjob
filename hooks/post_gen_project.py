@@ -19,9 +19,8 @@ def setup_links(parent_dir, required_links):
 PARENT_DIR = "../../"
 
 REQUIRED_LINKS = [
-    "README.md", "sidekick", "TODO.md", "lib/Makefile",
-    "lib/setup.DESCRIPTION.R", "doc/header.tex",
-    "bin/buddy", "scripts/setup.sh", "scripts/helpers_for_setup"
+    "README.md", "sidekick", "TODO.md", "doc/header.tex", "bin/buddy",
+    "scripts/setup.sh", "scripts/helpers_for_setup"
 ]
 
 setup_links(PARENT_DIR, REQUIRED_LINKS)
