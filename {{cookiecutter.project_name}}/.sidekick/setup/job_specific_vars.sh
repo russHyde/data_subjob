@@ -19,11 +19,10 @@ export IS_JUPYTER_R_REQUIRED={{cookiecutter.is_jupyter_r_kernel_required}}
 
 ###############################################################################
 # PKGNAME is the name of the job-specific R package
-# - Note that the R-package <PKGNAME> will only be built/installed if the user
-#   adds some files to the subdirectories ./lib/local_rfuncs/R or
-#   ./lib/global_rfuncs
-# - The R_INCLUDES_FILE defines which external R packages are 'include'd by the
-#   job-specific package
+# - Note that the R-package <PKGNAME> will be initialised in
+# ./lib/local/<PKGNAME>.
+# - User should add files to ./lib/local/<PKGNAME>/R/ to make a usable package
+# (the package will be installed during ./sidekick setup)
 
 if [[ ! -z "${IS_R_PKG_REQUIRED}" ]] && [[ ${IS_R_PKG_REQUIRED} -ne 0 ]];
 then
